@@ -14,7 +14,7 @@ public class AppMqSend {
         SpringApplication.run(AppMqSend.class);
 
         /**
-         * 模拟发送失败
+         * 模拟发送失败，比如消息发送的时候连接被关了
          */
        /* AnnotationConfigApplicationContext
                 annotationConfigApplicationContext=new AnnotationConfigApplicationContext(RabbitmqConfig.class);

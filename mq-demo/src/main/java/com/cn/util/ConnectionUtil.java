@@ -11,11 +11,11 @@ public class ConnectionUtil {
     public static Connection getConnection() throws Exception{
 
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("localhost");
+        factory.setHost("192.168.91.143");
         factory.setPort(5672);
-        factory.setUsername("test");
-        factory.setPassword("test");
-        factory.setVirtualHost("testhost");
+        factory.setUsername("admin");
+        factory.setPassword("admin");
+        factory.setVirtualHost("my_vhost");
         return factory.newConnection();
     }
 }

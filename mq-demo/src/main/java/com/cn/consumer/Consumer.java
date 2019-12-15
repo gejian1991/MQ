@@ -26,7 +26,7 @@ public class Consumer {
                 System.out.println("消息消费成功");*/
 
                 i++;
-                //消息确认          DeliveryTag消息的标识，multiple是否批量确认
+                //消息确认          DeliveryTag消息的唯一标识，multiple是否批量确认
                // channel.basicAck(envelope.getDeliveryTag(),false);
                 channel.basicAck(envelope.getDeliveryTag(),false);
                 /*if(i%50==0||i==1000){

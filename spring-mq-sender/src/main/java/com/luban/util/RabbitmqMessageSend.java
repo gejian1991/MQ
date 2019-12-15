@@ -18,9 +18,9 @@ public class RabbitmqMessageSend {
     @Autowired
     RabbitTemplate rabbitTemplate;
 
-    //使用多个CallBack
-    /*@PostConstruct
-    public void init(){
+    //有多个Callback，使用不同的calback
+    @PostConstruct
+    /*public void init(){
         rabbitTemplate.setConfirmCallback();
     }*/
 
